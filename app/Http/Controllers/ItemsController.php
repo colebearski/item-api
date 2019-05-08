@@ -38,7 +38,8 @@ class ItemsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Post baby
+        return 123;
     }
 
     /**
