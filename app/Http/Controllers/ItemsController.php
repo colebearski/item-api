@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// Bring in the Model
+use App\Item;
 
 class ItemsController extends Controller
 {
@@ -13,7 +15,9 @@ class ItemsController extends Controller
      */
     public function index()
     {
-        //
+        // Grab all the items and output them as JSON
+        $items = Item::all();
+        return response()->json($items);
     }
 
     /**
@@ -45,7 +49,9 @@ class ItemsController extends Controller
      */
     public function show($id)
     {
-        //
+        // Grab a single item
+        $item = Item::find($id);
+        return response()->json($item);
     }
 
     /**
