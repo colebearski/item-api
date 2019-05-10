@@ -21,6 +21,9 @@ class ItemsController extends Controller
         return response()->json($items);
     }
 
+    // ******************************
+    // Not using this 
+    // ******************************
     /**
      * Show the form for creating a new resource.
      *
@@ -30,6 +33,9 @@ class ItemsController extends Controller
     {
         //
     }
+    // *****************************
+    // Not using this ^^
+    // *****************************
 
     /**
      * Store a newly created resource in storage.
@@ -80,6 +86,9 @@ class ItemsController extends Controller
         return response()->json($item);
     }
 
+    // ******************************
+    // Not using this 
+    // ******************************
     /**
      * Show the form for editing the specified resource.
      *
@@ -90,6 +99,9 @@ class ItemsController extends Controller
     {
         //
     }
+    // ******************************
+    // Not using this ^^
+    // ******************************
 
     /**
      * Update the specified resource in storage.
@@ -118,7 +130,7 @@ class ItemsController extends Controller
             return response()->json($item);
         }
     }
-
+     
     /**
      * Remove the specified resource from storage.
      *
